@@ -61,7 +61,8 @@ def tower_entrance():
     else:
         print_pause("You find yourself in the entrance of the tower,"
                     " you can't go in\n"
-                    "It looks like you need a code to disable the firewall")
+                    #changed line here
+                    "You seem to be missing some type of code to be able to enter the tower")
         game_start()
 
 
