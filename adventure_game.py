@@ -9,9 +9,10 @@ def print_pause(msg):
 
 inventory = []
 weapons = ["Virtuous Contract", "Cruel Oath", "Angel's Folly", "Beastlord"]
-bosses = ["Alien Leader", "Machine Songstress", "Alien Overlord"]
+bosses = ["Alien Leader", "Machine Songstress", "Alien Overlord", "Soul Trader"]
 boss = random.choice(bosses)
 sword = random.choice(weapons)
+factory_boss = random.choice(bosses)
 
 
 def intro():
@@ -61,7 +62,6 @@ def tower_entrance():
     else:
         print_pause("You find yourself in the entrance of the tower,"
                     " you can't go in\n"
-                    #changed line here
                     "You seem to be missing some type of code to be able to enter the tower")
         game_start()
 
@@ -141,15 +141,35 @@ def singing():
                 print_pause("")
                 print_pause("You laugh")
                 print_pause("The machine laughs")
-                print_pause("You go back")
-                print_pause("As you leave you hear the machine humming"
-                            " once again")
                 inventory.append("joke")
-                game_start()
+                print_pause("The machine thanks you for stopping by and tells"
+                            " about some noises by the forest where an "
+                            "abandoned machine factory used to operate")
+                while True:
+                    inv_fact = input("What do you want to do?\n"
+                                "1. Investigate the factory\n"
+                                "2. Go back\n").lower
+                    if inv_fact == "1":
+                        factory()
+                    if inv_fact == "2":
+                        game_start()
+                    else:
+                        print("Please enter a valid option")
             elif hear_joke == "n":
                 print_pause("Machine: Sad beeps")
                 print_pause("You return to the area you were before")
                 game_start()
+
+
+def factory():
+    print_pause("You decided to follow the noise\n"
+                "As you approach the forest, you see smoke"
+                " coming out of the center of the forest")
+    print_pause("You get to the center of the forest and "
+                "you find yourself in fornt of a factory")
+    print_pause("Inside you find " + boss + " and tries to"
+                "attack you")
+
 
 
 def ship():
