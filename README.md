@@ -7,4 +7,4 @@ It is heavily inspired by the game Nier Automata which is one of my favorite gam
 
 ## Aditional info
 If you want to try it by yourself feel free to download it and run it.
-Iwould like to keep adding more areas and more plot so any advice is welcome
+I would like to keep adding more areas and more plot so any contribution helps
