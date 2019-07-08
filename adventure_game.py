@@ -9,7 +9,8 @@ def print_pause(msg):
 
 inventory = []
 weapons = ["Virtuous Contract", "Cruel Oath", "Angel's Folly", "Beastlord"]
-bosses = ["Alien Leader", "Machine Songstress", "Alien Overlord", "Soul Trader"]
+bosses = ["Alien Leader", "Machine Songstress", "Alien Overlord",
+          "Soul Trader"]
 boss = random.choice(bosses)
 sword = random.choice(weapons)
 factory_boss = random.choice(bosses)
@@ -62,7 +63,8 @@ def tower_entrance():
     else:
         print_pause("You find yourself in the entrance of the tower,"
                     " you can't go in\n"
-                    "You seem to be missing some type of code to be able to enter the tower")
+                    "You seem to be missing some type of code to be able to "
+                    "enter the tower")
         game_start()
 
 
@@ -147,8 +149,8 @@ def singing():
                             "abandoned machine factory used to operate")
                 while True:
                     inv_fact = input("What do you want to do?\n"
-                                "1. Investigate the factory\n"
-                                "2. Go back\n").lower
+                                     "1. Investigate the factory\n"
+                                     "2. Go back\n").lower
                     if inv_fact == "1":
                         factory()
                     if inv_fact == "2":
@@ -169,7 +171,21 @@ def factory():
                 "you find yourself in fornt of a factory")
     print_pause("Inside you find " + boss + " and tries to"
                 "attack you")
+    while True:
+        fact_att_opt = input("What will you do?"
+                             "1. Attack back"
+                             "2. Run away")
 
+        if fact_att_opt == "1":
+            print_pause("You attack the " + factory_boss)
+            print_pause(factory_boss + " falls down and you obtain a key code")
+            print_pause("Wonder what it would do...")
+            inventory.append("key_code")
+        if fact_att_opt == "2":
+            print_pause("You run back away safely")
+            game_start()
+        else:
+            print("Please enter a valid option")
 
 
 def ship():
