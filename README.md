@@ -2,9 +2,10 @@
 Short adventure game with a few random options
 
 ## Introduction
-This is a short adventure game that I did for a programming course.
-It is heavily inspired by the game Nier Automata which is one of my favorite games.
+Humans want to claim back the Earth from the aliens who claimed it so they sent you, combat android unit A2,
+to kill the alien leader and claim back the planet. 
 
-## Aditional info
-If you want to try it by yourself feel free to download it and run it.
+## Aditional Info
+This is a small porject that I made some time ago and I'm trying to expand on.
+If you want to try it by yourself feel free to download and run it.
 I would like to keep adding more areas and more plot so any contribution helps
