@@ -1,5 +1,5 @@
 # adventure-game
-Short adventure game with a few random options
+Short adventure game where you fight for Earth's freedom
 
 ## Introduction
 Humans want to claim back the Earth from the aliens who claimed it so they sent you, combat android unit A2,
