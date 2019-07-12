@@ -1,4 +1,4 @@
-# adventure-game
+# Adventure Game
 
 Short adventure game where you fight for Earth's freedom
 
