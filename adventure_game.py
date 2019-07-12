@@ -4,7 +4,7 @@ import random
 
 def print_pause(msg):
     print(msg)
-    time.sleep(2)
+    time.sleep(1)
 
 
 inventory = []
