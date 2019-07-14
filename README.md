@@ -8,6 +8,14 @@ Humans want to claim back the Earth from the aliens who claimed it so they sent
 you, combat android unit A2,
 to kill the alien leader and claim back the planet.
 
+## License
+
+GNU General Public License
+
+## Contributing
+
+If you want to add another route feel free to make a pull request
+
 ## Additional Info
 
 This is a small project that I made some time ago and I'm trying to expand on.
